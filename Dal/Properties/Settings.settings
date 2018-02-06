@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Positivo.Dal.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectionStringStd" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=200sql001;Database=prodcelular;User Id=prodcelular;Password=pr4d2017#;</Value>
+    </Setting>
+    <Setting Name="ConnectionStringTtd" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=200sql001;Database=prodcelular;Trusted_Connection=True;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

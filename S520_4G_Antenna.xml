@@ -1,0 +1,469 @@
+<?xml version="1.1" encoding="UTF16"?>
+<Config name="Config" width="500" height="500">
+    <TabCtrl left="10" top="10" right="470" bottom="420" Visible="1">
+        <Items name="General" id="0">
+            <Static name="Project_Name" id="0" left="10" top="13" right="100" bottom="22" />
+            <Edit name="_Project_Name" id="0" left="100" top="10" right="100" bottom="22" value="S520_4G" />
+            <Static name="Station" id="1" left="220" top="13" right="100" bottom="22" />
+            <Edit name="_Station" id="1" left="310" top="10" right="100" bottom="22" value="FMPH42T20_ANTENA_2" />
+            <Static name="Operator" id="2" left="10" top="43" right="100" bottom="22" />
+            <Edit name="_Operator" id="2" left="100" top="40" right="100" bottom="22" value="T1" />
+            <Static name="Line" id="3" left="220" top="43" right="100" bottom="22" />
+            <Edit name="_Line" id="3" left="310" top="40" right="100" bottom="22" value="L1" />
+            <Static name="Fixture" id="4" left="10" top="73" right="100" bottom="22" />
+            <Edit name="_Fixture" id="4" left="100" top="70" right="100" bottom="22" value="ANTENNA_1" />
+            <Static name="DB_Host" id="5" left="10" top="113" right="100" bottom="22" />
+            <Edit name="_DB_Host" id="5" left="100" top="110" right="150" bottom="22" value="192.168.85.154" />
+            <Static name="DB_User" id="6" left="10" top="143" right="100" bottom="22" />
+            <Edit name="_DB_User" id="6" left="100" top="140" right="100" bottom="22" value="root" />
+            <Static name="DB_Password" id="7" left="220" top="143" right="100" bottom="22" />
+            <Edit name="_DB_Password" id="7" left="310" top="140" right="100" bottom="22" value="1234567" />
+            <Static name="Project_Name" id="8" left="10" top="173" right="100" bottom="22" />
+            <Edit name="_Project_Name_Criticaldata" id="8" left="100" top="170" right="100" bottom="22" value="S520_4G" />
+            <Static name="Customer" id="9" left="220" top="173" right="100" bottom="22" />
+            <Edit name="Customer" id="9" left="310" top="170" right="100" bottom="22" value="QC" />
+            <Static name="ModemVersion" id="10" left="10" top="213" right="100" bottom="22" />
+            <Edit name="Modem_Version" id="10" left="100" top="210" right="100" bottom="22" value="Q100_BASE_V" />
+            <Static name="SoftwareVersion" id="11" left="220" top="213" right="100" bottom="22" />
+            <Edit name="Software_Version" id="11" left="310" top="210" right="100" bottom="22" value="Q100_AP_V123" />
+            <Static name="HWID" id="12" left="10" top="243" right="100" bottom="22" />
+            <Edit name="HWID" id="12" left="100" top="240" right="100" bottom="22" value="100" />
+            <Static name="PSNHead" id="13" left="220" top="243" right="100" bottom="22" />
+            <Edit name="PSNHead" id="13" left="310" top="240" right="100" bottom="22" value="4" />
+            <Static name="HWIDLen" id="14" left="10" top="273" right="100" bottom="22" />
+            <Edit name="HWIDLen" id="14" left="100" top="270" right="100" bottom="22" value="4" />
+            <Static name="PSNLen" id="15" left="220" top="273" right="100" bottom="22" />
+            <Edit name="PSNLen" id="15" left="310" top="270" right="100" bottom="22" value="9" />
+            <CheckBox name="Calibration" id="16" left="10" top="340" right="100" bottom="22" value="0" />
+            <CheckBox name="FinalTest" id="17" left="10" top="370" right="100" bottom="22" value="1" />
+            <CheckBox name="PowerSupply" id="18" left="10" top="310" right="100" bottom="22" value="0" />
+            <CheckBox name="MIIServerComm" id="19" left="200" top="310" right="150" bottom="22" value="1" />
+            <CheckBox name="Battery_Enable" id="20" left="200" top="340" right="150" bottom="22" value="0" />
+        </Items>
+        <Items name="WCDMA" id="1">
+            <CheckBox name="BC1_Enable" id="1" left="10" top="10" right="95" bottom="22" value="0" />
+            <ComboBox name="BC1_ChanNum" id="1" left="110" top="10" right="85" bottom="200" value="2">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="BC1_Channel1" id="1" left="210" top="10" right="65" bottom="22" value="10562" />
+            <Edit name="BC1_Channel2" id="2" left="280" top="10" right="65" bottom="22" value="10700" />
+            <Edit name="BC1_Channel3" id="3" left="350" top="10" right="65" bottom="22" value="10838" />
+            <CheckBox name="BC2_Enable" id="2" left="10" top="40" right="95" bottom="22" value="0" />
+            <ComboBox name="BC2_ChanNum" id="2" left="110" top="40" right="85" bottom="20" value="2">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="BC2_Channel1" id="4" left="210" top="40" right="65" bottom="22" value="9662" />
+            <Edit name="BC2_Channel2" id="5" left="280" top="40" right="65" bottom="22" value="9781" />
+            <Edit name="BC2_Channel3" id="6" left="350" top="40" right="65" bottom="22" value="9938" />
+            <CheckBox name="BC5_Enable" id="3" left="10" top="70" right="95" bottom="22" value="0" />
+            <ComboBox name="BC5_ChanNum" id="3" left="110" top="70" right="85" bottom="20" value="2">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="BC5_Channel1" id="7" left="210" top="70" right="65" bottom="22" value="4357" />
+            <Edit name="BC5_Channel2" id="8" left="280" top="70" right="65" bottom="22" value="4406" />
+            <Edit name="BC5_Channel3" id="9" left="350" top="70" right="65" bottom="22" value="4458" />
+            <CheckBox name="BC8_Enable" id="4" left="10" top="100" right="95" bottom="22" value="0" />
+            <ComboBox name="BC8_ChanNum" id="4" left="110" top="100" right="85" bottom="20" value="2">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="BC8_Channel1" id="10" left="210" top="100" right="65" bottom="22" value="2937" />
+            <Edit name="BC8_Channel2" id="11" left="280" top="100" right="65" bottom="22" value="3012" />
+            <Edit name="BC8_Channel3" id="12" left="350" top="100" right="65" bottom="22" value="3088" />
+            <Static name="BC1_Loss_List_0" id="1" left="10" top="133" right="105" bottom="22" />
+            <Edit name="BC1_Loss_List_0" id="13" left="115" top="130" right="100" bottom="22" value="12,14.74,12" />
+            <Static name="BC1_Loss_List_1" id="2" left="220" top="133" right="105" bottom="22" />
+            <Edit name="BC1_Loss_List_1" id="14" left="325" top="130" right="100" bottom="22" value="1,1,1" />
+            <Static name="BC2_Loss_List_0" id="3" left="10" top="163" right="105" bottom="22" />
+            <Edit name="BC2_Loss_List_0" id="15" left="115" top="160" right="100" bottom="22" value="1,1,1" />
+            <Static name="BC2_Loss_List_1" id="4" left="220" top="163" right="105" bottom="22" />
+            <Edit name="BC2_Loss_List_1" id="16" left="325" top="160" right="100" bottom="22" value="1,1,1" />
+            <Static name="BC5_Loss_List_0" id="5" left="10" top="193" right="105" bottom="22" />
+            <Edit name="BC5_Loss_List_0" id="17" left="115" top="190" right="100" bottom="22" value="12,6.59,12" />
+            <Static name="BC5_Loss_List_1" id="6" left="220" top="193" right="105" bottom="22" />
+            <Edit name="BC5_Loss_List_1" id="18" left="325" top="190" right="100" bottom="22" value="1,1,1" />
+            <Static name="BC8_Loss_List_0" id="7" left="10" top="223" right="105" bottom="22" />
+            <Edit name="BC8_Loss_List_0" id="19" left="115" top="220" right="100" bottom="22" value="1,1,1" />
+            <Static name="BC8_Loss_List_1" id="8" left="220" top="223" right="105" bottom="22" />
+            <Edit name="BC8_Loss_List_1" id="20" left="325" top="220" right="100" bottom="22" value="1,1,1" />
+            <Static name="BC1_RxPower" id="9" left="10" top="253" right="90" bottom="22" />
+            <Edit name="BC1_RxPower" id="21" left="100" top="250" right="50" bottom="22" value="-80" />
+            <Static name="BC2_RxPower" id="10" left="10" top="283" right="90" bottom="22" />
+            <Edit name="BC2_RxPower" id="22" left="100" top="280" right="50" bottom="22" value="-100" />
+            <Static name="BC5_RxPower" id="11" left="10" top="313" right="90" bottom="22" />
+            <Edit name="BC5_RxPower" id="23" left="100" top="310" right="50" bottom="22" value="-80" />
+            <Static name="BC8_RxPower" id="12" left="10" top="343" right="90" bottom="22" />
+            <Edit name="BC8_RxPower" id="24" left="100" top="340" right="50" bottom="22" value="-100" />
+        </Items>
+        <Items name="GSM" id="2">
+            <CheckBox name="GSM850_Enable" id="1" left="10" top="10" right="115" bottom="22" value="0" />
+            <ComboBox name="GSM850_ChanNum" id="1" left="130" top="10" right="85" bottom="20" value="2">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="GSM850_Channel1" id="1" left="230" top="10" right="65" bottom="22" value="128" />
+            <Edit name="GSM850_Channel2" id="2" left="300" top="10" right="65" bottom="22" value="190" />
+            <Edit name="GSM850_Channel3" id="3" left="370" top="10" right="65" bottom="22" value="251" />
+            <CheckBox name="GSM900_Enable" id="2" left="10" top="40" right="115" bottom="22" value="0" />
+            <ComboBox name="GSM900_ChanNum" id="2" left="130" top="40" right="85" bottom="20" value="2">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="GSM900_Channel1" id="4" left="230" top="40" right="65" bottom="22" value="975" />
+            <Edit name="GSM900_Channel2" id="5" left="300" top="40" right="65" bottom="22" value="62" />
+            <Edit name="GSM900_Channel3" id="6" left="370" top="40" right="65" bottom="22" value="124" />
+            <CheckBox name="GSM1800_Enable" id="3" left="10" top="70" right="120" bottom="22" value="0" />
+            <ComboBox name="GSM1800_ChanNum" id="3" left="130" top="70" right="85" bottom="20" value="2">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="GSM1800_Channel1" id="7" left="230" top="70" right="65" bottom="22" value="512" />
+            <Edit name="GSM1800_Channel2" id="8" left="300" top="70" right="65" bottom="22" value="698" />
+            <Edit name="GSM1800_Channel3" id="9" left="370" top="70" right="65" bottom="22" value="885" />
+            <CheckBox name="GSM1900_Enable" id="4" left="10" top="100" right="120" bottom="22" value="0" />
+            <ComboBox name="GSM1900_ChanNum" id="4" left="130" top="100" right="85" bottom="20" value="2">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="GSM1900_Channel1" id="10" left="230" top="100" right="65" bottom="22" value="512" />
+            <Edit name="GSM1900_Channel2" id="11" left="300" top="100" right="65" bottom="22" value="661" />
+            <Edit name="GSM1900_Channel3" id="12" left="370" top="100" right="65" bottom="22" value="810" />
+            <Static name="GSM850_Loss_List_0" id="1" left="10" top="133" right="130" bottom="22" />
+            <Edit name="GSM850_Loss_List_0" id="13" left="145" top="130" right="80" bottom="22" value="12,12,12" />
+            <Static name="GSM850_Loss_List_1" id="2" left="230" top="133" right="130" bottom="22" />
+            <Edit name="GSM850_Loss_List_1" id="14" left="365" top="130" right="80" bottom="22" value="1,1,1" />
+            <Static name="GSM900_Loss_List_0" id="3" left="10" top="163" right="130" bottom="22" />
+            <Edit name="GSM900_Loss_List_0" id="15" left="145" top="160" right="80" bottom="22" value="12,10.28,12" />
+            <Static name="GSM900_Loss_List_1" id="4" left="230" top="163" right="130" bottom="22" />
+            <Edit name="GSM900_Loss_List_1" id="16" left="365" top="160" right="80" bottom="22" value="1,1,1" />
+            <Static name="GSM1800_Loss_List_0" id="5" left="10" top="193" right="130" bottom="22" />
+            <Edit name="GSM1800_Loss_List_0" id="17" left="145" top="190" right="80" bottom="22" value="12,14.56,12" />
+            <Static name="GSM1800_Loss_List_1" id="6" left="230" top="193" right="130" bottom="22" />
+            <Edit name="GSM1800_Loss_List_1" id="18" left="365" top="190" right="80" bottom="22" value="1,1,1" />
+            <Static name="GSM1900_Loss_List_0" id="7" left="10" top="223" right="130" bottom="22" />
+            <Edit name="GSM1900_Loss_List_0" id="19" left="145" top="220" right="80" bottom="22" value="12,12,12" />
+            <Static name="GSM1900_Loss_List_1" id="8" left="230" top="223" right="130" bottom="22" />
+            <Edit name="GSM1900_Loss_List_1" id="20" left="365" top="220" right="80" bottom="22" value="1,1,1" />
+            <Static name="GSM850_RxPower" id="9" left="10" top="253" right="120" bottom="22" />
+            <Edit name="GSM850_RxPower" id="21" left="130" top="250" right="50" bottom="22" value="-100" />
+            <Static name="GSM900_RxPower" id="10" left="10" top="283" right="120" bottom="22" />
+            <Edit name="GSM900_RxPower" id="22" left="130" top="280" right="50" bottom="22" value="-80" />
+            <Static name="GSM1800_RxPower" id="11" left="10" top="313" right="120" bottom="22" />
+            <Edit name="GSM1800_RxPower" id="23" left="130" top="310" right="50" bottom="22" value="-75" />
+            <Static name="GSM1900_RxPower" id="12" left="10" top="343" right="120" bottom="22" />
+            <Edit name="GSM1900_RxPower" id="24" left="130" top="340" right="50" bottom="22" value="-100" />
+        </Items>
+        <Items name="TDDLTE" id="3">
+            <CheckBox name="L38_Enable" id="1" left="10" top="10" right="95" bottom="22" value="0" />
+            <ComboBox name="L38_ChanNum" id="1" left="110" top="10" right="85" bottom="20" value="7">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="L38_Freq1" id="1" left="210" top="10" right="65" bottom="22" value="25950" />
+            <Edit name="L38_Freq2" id="2" left="280" top="10" right="65" bottom="22" value="25750" />
+            <Edit name="L38_Freq3" id="3" left="350" top="10" right="65" bottom="22" value="26150" />
+            <CheckBox name="L39_Enable" id="2" left="10" top="40" right="95" bottom="22" value="0" />
+            <ComboBox name="L39_ChanNum" id="2" left="110" top="40" right="85" bottom="20" value="7">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="L39_Freq1" id="4" left="210" top="40" right="65" bottom="22" value="19000" />
+            <Edit name="L39_Freq2" id="5" left="280" top="40" right="65" bottom="22" value="18850" />
+            <Edit name="L39_Freq3" id="6" left="350" top="40" right="65" bottom="22" value="19150" />
+            <CheckBox name="L40_Enable" id="3" left="10" top="70" right="95" bottom="22" value="0" />
+            <ComboBox name="L40_ChanNum" id="3" left="110" top="70" right="85" bottom="20" value="7">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="L40_Freq1" id="7" left="210" top="70" right="65" bottom="22" value="23500" />
+            <Edit name="L40_Freq2" id="8" left="280" top="70" right="65" bottom="22" value="23050" />
+            <Edit name="L40_Freq3" id="9" left="350" top="70" right="65" bottom="22" value="23950" />
+            <CheckBox name="L41_Enable" id="40" left="10" top="100" right="95" bottom="22" value="0" />
+            <ComboBox name="L41_ChanNum" id="40" left="110" top="100" right="85" bottom="20" value="4">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="L41_Freq1" id="13" left="210" top="100" right="65" bottom="22" value="25930" />
+            <Edit name="L41_Freq2" id="14" left="280" top="100" right="65" bottom="22" value="24980" />
+            <Edit name="L41_Freq3" id="15" left="350" top="100" right="65" bottom="22" value="26875" />
+            <Static name="L38_Loss_List_0" id="1" left="10" top="133" right="105" bottom="22" />
+            <Edit name="L38_Loss_List_0" id="16" left="115" top="130" right="100" bottom="22" value="8,8,8" />
+            <Static name="L38_Loss_List_1" id="2" left="220" top="133" right="105" bottom="22" />
+            <Edit name="L38_Loss_List_1" id="17" left="325" top="130" right="100" bottom="22" value="25,25,25" />
+            <Static name="L39_Loss_List_0" id="3" left="10" top="163" right="105" bottom="22" />
+            <Edit name="L39_Loss_List_0" id="18" left="115" top="160" right="100" bottom="22" value="8,8,8" />
+            <Static name="L39_Loss_List_1" id="4" left="220" top="163" right="105" bottom="22" />
+            <Edit name="L39_Loss_List_1" id="19" left="325" top="160" right="100" bottom="22" value="25,25,25" />
+            <Static name="L40_Loss_List_0" id="5" left="10" top="193" right="105" bottom="22" />
+            <Edit name="L40_Loss_List_0" id="20" left="115" top="190" right="100" bottom="22" value="8,8,8" />
+            <Static name="L40_Loss_List_1" id="6" left="220" top="193" right="105" bottom="22" />
+            <Edit name="L40_Loss_List_1" id="21" left="325" top="190" right="100" bottom="22" value="25,25,25" />
+            <Static name="L41_Loss_List_0" id="7" left="10" top="223" right="105" bottom="22" />
+            <Edit name="L41_Loss_List_0" id="22" left="115" top="220" right="100" bottom="22" value="8,8,8" />
+            <Static name="L41_Loss_List_1" id="8" left="220" top="223" right="105" bottom="22" />
+            <Edit name="L41_Loss_List_1" id="23" left="325" top="220" right="100" bottom="22" value="25,25,25" />
+            <Static name="L38_RxPower" id="9" left="10" top="253" right="90" bottom="22" />
+            <Edit name="L38_RxPower" id="24" left="100" top="250" right="50" bottom="22" value="-90" />
+            <Static name="L39_RxPower" id="10" left="10" top="283" right="90" bottom="22" />
+            <Edit name="L39_RxPower" id="25" left="100" top="280" right="50" bottom="22" value="-90" />
+            <Static name="L40_RxPower" id="11" left="10" top="313" right="90" bottom="22" />
+            <Edit name="L40_RxPower" id="26" left="100" top="310" right="50" bottom="22" value="-90" />
+            <Static name="L41_RxPower" id="12" left="10" top="343" right="90" bottom="22" />
+            <Edit name="L41_RxPower" id="27" left="100" top="340" right="50" bottom="22" value="-90" />
+        </Items>
+        <Items name="FDDLTE" id="4">
+            <CheckBox name="L3_Enable" id="1" left="10" top="10" right="95" bottom="22" value="0" />
+            <ComboBox name="L3_ChanNum" id="1" left="110" top="10" right="85" bottom="20" value="2">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="L3_Freq1" id="1" left="210" top="10" right="65" bottom="22" value="18425" />
+            <Edit name="L3_Freq2" id="2" left="280" top="10" right="65" bottom="22" value="18075" />
+            <Edit name="L3_Freq3" id="3" left="350" top="10" right="65" bottom="22" value="18775" />
+            <CheckBox name="L7_Enable" id="2" left="10" top="40" right="95" bottom="22" value="1" />
+            <ComboBox name="L7_ChanNum" id="2" left="110" top="40" right="85" bottom="20" value="2">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="L7_Freq1" id="4" left="210" top="40" right="65" bottom="22" value="26550" />
+            <Edit name="L7_Freq2" id="5" left="280" top="40" right="65" bottom="22" value="26225" />
+            <Edit name="L7_Freq3" id="6" left="350" top="40" right="65" bottom="22" value="26875" />
+            <CheckBox name="L20_Enable" id="3" left="10" top="70" right="95" bottom="22" value="1" />
+            <ComboBox name="L20_ChanNum" id="3" left="110" top="70" right="85" bottom="20" value="2">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="L20_Freq1" id="7" left="210" top="70" right="65" bottom="22" value="7805" />
+            <Edit name="L20_Freq2" id="8" left="280" top="70" right="65" bottom="22" value="7605" />
+            <Edit name="L20_Freq3" id="9" left="350" top="70" right="65" bottom="22" value="8005" />
+            <CheckBox name="L1_Enable" id="31" left="10" top="100" right="95" bottom="22" value="0" />
+            <ComboBox name="L1_ChanNum" id="31" left="110" top="100" right="85" bottom="20" value="2">
+                <Items>None</Items>
+                <Items>H CH</Items>
+                <Items>M CH</Items>
+                <Items>M+H CH</Items>
+                <Items>L CH</Items>
+                <Items>L+H CH</Items>
+                <Items>L+M CH</Items>
+                <Items>L+M+H CH</Items>
+            </ComboBox>
+            <Edit name="L1_Freq1" id="31" left="210" top="100" right="65" bottom="22" value="21400" />
+            <Edit name="L1_Freq2" id="32" left="280" top="100" right="65" bottom="22" value="21125" />
+            <Edit name="L1_Freq3" id="33" left="350" top="100" right="65" bottom="22" value="21675" />
+            <Static name="L3_Loss_List_0" id="1" left="10" top="133" right="105" bottom="22" />
+            <Edit name="L3_Loss_List_0" id="13" left="115" top="130" right="100" bottom="22" value="12,12,12" />
+            <Static name="L3_Loss_List_1" id="2" left="220" top="133" right="105" bottom="22" />
+            <Edit name="L3_Loss_List_1" id="14" left="325" top="130" right="100" bottom="22" value="1,1,1" />
+            <Static name="L7_Loss_List_0" id="3" left="10" top="163" right="105" bottom="22" />
+            <Edit name="L7_Loss_List_0" id="15" left="115" top="160" right="100" bottom="22" value="12,20.45,12" />
+            <Static name="L7_Loss_List_1" id="4" left="220" top="163" right="105" bottom="22" />
+            <Edit name="L7_Loss_List_1" id="16" left="325" top="160" right="100" bottom="22" value="1,1,1" />
+            <Static name="L20_Loss_List_0" id="5" left="10" top="193" right="105" bottom="22" />
+            <Edit name="L20_Loss_List_0" id="17" left="115" top="190" right="100" bottom="22" value="12,5.42,12" />
+            <Static name="L20_Loss_List_1" id="6" left="220" top="193" right="105" bottom="22" />
+            <Edit name="L20_Loss_List_1" id="18" left="325" top="190" right="100" bottom="22" value="1,1,1" />
+            <Static name="L1_Loss_List_0" id="7" left="10" top="223" right="105" bottom="22" />
+            <Edit name="L1_Loss_List_0" id="35" left="115" top="220" right="100" bottom="22" value="1,6,1" />
+            <Static name="L1_Loss_List_1" id="8" left="220" top="223" right="105" bottom="22" />
+            <Edit name="L1_Loss_List_1" id="36" left="325" top="220" right="100" bottom="22" value="1,1,1" />
+            <Static name="L3_RxPower" id="9" left="10" top="253" right="90" bottom="22" />
+            <Edit name="L3_RxPower" id="21" left="100" top="250" right="50" bottom="22" value="-90" />
+            <Static name="L7_RxPower" id="10" left="10" top="283" right="90" bottom="22" />
+            <Edit name="L7_RxPower" id="22" left="100" top="280" right="50" bottom="22" value="-86" />
+            <Static name="L20_RxPower" id="11" left="10" top="313" right="90" bottom="22" />
+            <Edit name="L20_RxPower" id="23" left="100" top="310" right="50" bottom="22" value="-86" />
+            <Static name="L1_RxPower" id="41" left="10" top="343" right="90" bottom="22" />
+            <Edit name="L1_RxPower" id="43" left="100" top="340" right="50" bottom="22" value="-100" />
+        </Items>
+        <Items name="WCN" id="5">
+            <CheckBox name="WIFI_Enable" id="1" left="10" top="10" right="95" bottom="22" value="0" />
+            <ComboBox name="WIFI_ChanNum" id="1" left="110" top="10" right="85" bottom="20" value="7">
+                <Items>None</Items>
+                <Items>H</Items>
+                <Items>M</Items>
+                <Items>M+H</Items>
+                <Items>L</Items>
+                <Items>L+H</Items>
+                <Items>L+M</Items>
+                <Items>L+M+H</Items>
+            </ComboBox>
+            <Edit name="WIFI_Channel1" id="1" left="210" top="10" right="65" bottom="22" value="2412" />
+            <Edit name="WIFI_Channel2" id="2" left="280" top="10" right="65" bottom="22" value="2442" />
+            <Edit name="WIFI_Channel3" id="3" left="350" top="10" right="65" bottom="22" value="2484" />
+            <CheckBox name="BT_Enable" id="2" left="10" top="40" right="95" bottom="22" value="0" />
+            <ComboBox name="BT_ChanNum" id="2" left="110" top="40" right="85" bottom="20" value="7">
+                <Items>None</Items>
+                <Items>H</Items>
+                <Items>M</Items>
+                <Items>M+H</Items>
+                <Items>L</Items>
+                <Items>L+H</Items>
+                <Items>L+M</Items>
+                <Items>L+M+H</Items>
+            </ComboBox>
+            <Edit name="BT_Channel1" id="4" left="210" top="40" right="65" bottom="22" value="0" />
+            <Edit name="BT_Channel2" id="5" left="280" top="40" right="65" bottom="22" value="39" />
+            <Edit name="BT_Channel3" id="6" left="350" top="40" right="65" bottom="22" value="78" />
+            <CheckBox name="GPS_Enable" id="3" left="10" top="70" right="95" bottom="22" value="0" />
+            <Static name="RF_Port" id="1" left="110" top="73" right="80" bottom="22" />
+            <Edit name="_RF_Port" id="50" left="112" top="95" right="45" bottom="22" value="RF1C" />
+            <Static name="GPS_Level" id="2" left="170" top="73" right="80" bottom="22" />
+            <Edit name="GPS_Level" id="7" left="180" top="95" right="45" bottom="22" value="-133" />
+            <Static name="GPS_Rx_Loss" id="3" left="240" top="73" right="80" bottom="22" />
+            <Edit name="GPS_Rx_Loss" id="8" left="260" top="95" right="54" bottom="22" value="20" />
+            <Static name="GPS_Tx_Loss" id="4" left="335" top="73" right="80" bottom="22" />
+            <Edit name="GPS_Tx_Loss" id="9" left="360" top="95" right="54" bottom="22" value="20" />
+            <Static name="WIFI_Loss_List_Tx" id="5" left="10" top="133" right="110" bottom="22" />
+            <Edit name="_WIFI_Loss_List_Tx" id="10" left="130" top="130" right="65" bottom="22" value="26.5,26.5,26.5" />
+            <Static name="WIFI_Loss_List_Rx" id="7" left="10" top="163" right="110" bottom="22" />
+            <Edit name="_WIFI_Loss_List_Rx" id="12" left="130" top="160" right="65" bottom="22" value="28,28,28" />
+            <Static name="BT_Loss_List_Tx" id="6" left="240" top="133" right="110" bottom="22" />
+            <Edit name="_BT_Loss_List_Tx" id="11" left="350" top="130" right="65" bottom="22" value="28,28,28" />
+            <Static name="BT_Loss_List_Rx" id="8" left="240" top="163" right="110" bottom="22" />
+            <Edit name="_BT_Loss_List_Rx" id="13" left="350" top="160" right="65" bottom="22" value="28,28,28" />
+            <Static name="WIFI_TxPower_CH1" id="9" left="10" top="203" right="120" bottom="22" />
+            <Edit name="WIFI_TxPower_CH1" id="14" left="130" top="200" right="65" bottom="22" value="12" />
+            <Static name="WIFI_TxPower_CH2" id="10" left="10" top="233" right="120" bottom="22" />
+            <Edit name="WIFI_TxPower_CH2" id="15" left="130" top="230" right="65" bottom="22" value="22" />
+            <Static name="WIFI_TxPower_CH3" id="11" left="10" top="263" right="120" bottom="22" />
+            <Edit name="WIFI_TxPower_CH3" id="16" left="130" top="260" right="65" bottom="22" value="22" />
+            <Static name="WIFI_RxLevel_CH1" id="12" left="10" top="293" right="120" bottom="22" />
+            <Edit name="WIFI_RxLevel_CH1" id="17" left="130" top="290" right="65" bottom="22" value="-80" />
+            <Static name="WIFI_RxLevel_CH2" id="13" left="10" top="323" right="120" bottom="22" />
+            <Edit name="WIFI_RxLevel_CH2" id="18" left="130" top="320" right="65" bottom="22" value="-60" />
+            <Static name="WIFI_RxLevel_CH3" id="14" left="10" top="353" right="120" bottom="22" />
+            <Edit name="WIFI_RxLevel_CH3" id="19" left="130" top="350" right="65" bottom="22" value="-10" />
+            <Static name="BT_TxPower_CH1" id="15" left="240" top="203" right="120" bottom="22" />
+            <Edit name="BT_TxPower_CH1" id="20" left="350" top="200" right="65" bottom="22" value="10" />
+            <Static name="BT_TxPower_CH2" id="16" left="240" top="233" right="120" bottom="22" />
+            <Edit name="BT_TxPower_CH2" id="21" left="350" top="230" right="65" bottom="22" value="10" />
+            <Static name="BT_TxPower_CH3" id="17" left="240" top="263" right="120" bottom="22" />
+            <Edit name="BT_TxPower_CH3" id="22" left="350" top="260" right="65" bottom="22" value="10" />
+            <Static name="BT_RxLevel_CH1" id="18" left="240" top="293" right="120" bottom="22" />
+            <Edit name="BT_RxLevel_CH1" id="23" left="350" top="290" right="65" bottom="22" value="-50" />
+            <Static name="BT_RxLevel_CH2" id="19" left="240" top="323" right="120" bottom="22" />
+            <Edit name="BT_RxLevel_CH2" id="24" left="350" top="320" right="65" bottom="22" value="-50" />
+            <Static name="BT_RxLevel_CH3" id="20" left="240" top="353" right="120" bottom="22" />
+            <Edit name="BT_RxLevel_CH3" id="25" left="350" top="350" right="65" bottom="22" value="-50" />
+        </Items>
+        <Items name="MTK" id="6">
+            <Edit name="_Modem_DB" id="0" left="10" top="10" right="340" bottom="22" value="C:\\_Celular_Tablets\\Arquivos_Produtos\\S520_4G\\BPLGUInfoCustomAppSrcP_MT6735_S00_D517C_LWG_MP_V0_0_6_S20160523_1_lwg_n" />
+            <Button name="Modem_DB" id="0" left="360" top="10" right="95" bottom="22" action="0" type="file" />
+            <Edit name="_AP_DataBase" id="1" left="10" top="40" right="340" bottom="22" value="C:\\_Celular_Tablets\\Arquivos_Produtos\\S520_4G\\APDB_MT6735_S01_alps-mp-m0.mp1_W16.08" />
+            <Button name="AP_DataBase" id="1" left="360" top="40" right="95" bottom="22" action="1" type="path" />
+            <Static name="WriteAPdelay(s)" id="3" left="10" top="100" right="100" bottom="22" />
+            <Edit name="_WriteAPdelay" id="3" left="110" top="100" right="80" bottom="22" value="0" />
+            <Static name="PreloaderPort1" id="7" left="10" top="310" right="90" bottom="22" />
+            <Edit name="PreloaderPort_0" id="7" left="100" top="307" right="80" bottom="22" value="52" />
+            <Static name="PreloaderPort2" id="8" left="10" top="340" right="90" bottom="22" />
+            <Edit name="PreloaderPort_1" id="8" left="100" top="337" right="80" bottom="22" value="52" />
+            <Static name="PreloaderPort3" id="9" left="10" top="370" right="90" bottom="22" />
+            <Edit name="PreloaderPort_2" id="9" left="100" top="367" right="80" bottom="22" value="10" />
+            <Static name="KernelPort1" id="10" left="190" top="310" right="80" bottom="22" />
+            <Edit name="KernelPort_0" id="10" left="270" top="307" right="80" bottom="22" value="70" />
+            <Static name="KernelPort2" id="11" left="190" top="340" right="80" bottom="22" />
+            <Edit name="KernelPort_1" id="11" left="270" top="337" right="80" bottom="22" value="70" />
+            <Static name="KernelPort3" id="12" left="190" top="370" right="80" bottom="22" />
+            <Edit name="KernelPort_2" id="12" left="270" top="367" right="80" bottom="22" value="11" />
+            <CheckBox name="82and90ChipsForLTE" id="13" left="10" top="280" right="140" bottom="22" value="0" />
+            <CheckBox name="LTE" id="14" left="10" top="250" right="100" bottom="22" value="1" />
+        </Items>
+    </TabCtrl>
+    <OK name="OK" left="330" top="440" right="70" bottom="22" />
+    <Cancel name="Cancel" left="410" top="440" right="70" bottom="22" />
+    <FileButton name="Broswer Config File" left="240" top="440" right="80" bottom="22" />
+    <FileEdit left="10" top="440" right="225" bottom="22" />
+</Config>
