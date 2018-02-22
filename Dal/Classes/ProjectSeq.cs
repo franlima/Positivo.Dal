@@ -14,7 +14,7 @@ namespace Positivo.Dal.Classes
     public class ProjectSeq
     {
         public int ID { get; set; }
-        public int ID_Test_Seq { get; set; }
+        public int ID_TestSeq { get; set; }
         public string Name { get; set; }
     }
 
@@ -32,9 +32,9 @@ namespace Positivo.Dal.Classes
             using (SqlCommand comando = _connection.Find().CreateCommand())
             {
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = "INSERT INTO ProjectSeq (ID_Test_Seq, Name) VALUES (@id,@project); SELECT @@IDENTITY";
+                comando.CommandText = "INSERT INTO ProjectSeq (ID_TestSeq, Name) VALUES (@id,@project); SELECT @@IDENTITY";
 
-                comando.Parameters.Add("@id", SqlDbType.Int).Value = model.ID_Test_Seq;
+                comando.Parameters.Add("@id", SqlDbType.Int).Value = model.ID_TestSeq;
                 comando.Parameters.Add("@project", SqlDbType.Text).Value = model.Name;
                 //comando.ExecuteNonQuery();
                 model.ID = int.Parse(comando.ExecuteScalar().ToString());
@@ -51,7 +51,7 @@ namespace Positivo.Dal.Classes
                 comando.CommandText = "UPDATE ProjectSeq SET project=@project WHERE id=@id";
 
                 comando.Parameters.Add("@project", SqlDbType.Text).Value = model.Name;
-                comando.Parameters.Add("@id", SqlDbType.Int).Value = model.ID_Test_Seq;
+                comando.Parameters.Add("@id", SqlDbType.Int).Value = model.ID_TestSeq;
                 comando.ExecuteNonQuery();
             }
         }
@@ -65,7 +65,7 @@ namespace Positivo.Dal.Classes
                 comando.CommandType = CommandType.Text;
                 comando.CommandText = "DELETE FROM ProjectSeq WHERE id=@id";
 
-                comando.Parameters.Add("@id", SqlDbType.Int).Value = model.ID_Test_Seq;
+                comando.Parameters.Add("@id", SqlDbType.Int).Value = model.ID_TestSeq;
                 if (comando.ExecuteNonQuery() > 0)
                 {
                     retornar = true;
@@ -91,7 +91,7 @@ namespace Positivo.Dal.Classes
                     {                       
                         reader.Read();
                         _projectseq.ID = reader.GetInt32(0);
-                        _projectseq.ID_Test_Seq = reader.GetInt32(1);
+                        _projectseq.ID_TestSeq = reader.GetInt32(1);
                         _projectseq.Name = reader.GetString(2);
                     }
                 }
@@ -117,7 +117,7 @@ namespace Positivo.Dal.Classes
                     {
                         ProjectSeq _projectseq = new ProjectSeq {
                             ID = int.Parse(row["ID"].ToString()),
-                            ID_Test_Seq = int.Parse(row["ID_Test_Seq"].ToString()),
+                            ID_TestSeq = int.Parse(row["ID_TestSeq"].ToString()),
                             Name = row["Name"].ToString()
                         };
                         colecao.Add(_projectseq);

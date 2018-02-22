@@ -14,7 +14,7 @@ namespace Positivo.Dal.Classes
     public class TestStep
     {
         public int ID { get; set; }
-        public int ID_Test_Seq { get; set; }
+        public int ID_TestSeq { get; set; }
         public string IdTp { get; set; }
         public string Description { get; set; }
         public double LowLimit { get; set; }
@@ -36,11 +36,11 @@ namespace Positivo.Dal.Classes
             using (SqlCommand comando = _connection.Find().CreateCommand())
             {
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = "INSERT INTO TestStep (ID_Test_Seq, IdTp, Description," +
+                comando.CommandText = "INSERT INTO TestStep (ID_TestSeq, IdTp, Description," +
                                       "LowLimit, HighLimit, Unit) VALUES (@idtestseq, @idtp, @description" +
                                       "@lowlimit, @highlimit, @unit); SELECT @@IDENTITY";
 
-                comando.Parameters.Add("@idtestseq", SqlDbType.Text).Value = model.ID_Test_Seq;
+                comando.Parameters.Add("@idtestseq", SqlDbType.Text).Value = model.ID_TestSeq;
                 comando.Parameters.Add("@idtp", SqlDbType.Text).Value = model.IdTp;
                 comando.Parameters.Add("@description", SqlDbType.Text).Value = model.Description;
                 comando.Parameters.Add("@lowlimit", SqlDbType.Text).Value = model.LowLimit;
@@ -101,7 +101,7 @@ namespace Positivo.Dal.Classes
                     {
                         reader.Read();
                         _model.ID = reader.GetInt32(0);
-                        _model.ID_Test_Seq = reader.GetInt32(1);
+                        _model.ID_TestSeq = reader.GetInt32(1);
                         _model.IdTp = reader.GetString(2);
                         _model.Description = reader.GetString(3);
                         _model.LowLimit = reader.GetDouble(4);
@@ -132,7 +132,7 @@ namespace Positivo.Dal.Classes
                         TestStep _model = new TestStep
                         {
                             ID = int.Parse(row["ID"].ToString()),
-                            ID_Test_Seq = int.Parse(row["ID"].ToString()),
+                            ID_TestSeq = int.Parse(row["ID"].ToString()),
                             IdTp = row["Project"].ToString(),
                             Description = row["Project"].ToString(),
                             LowLimit = double.Parse(row["ID"].ToString()),
@@ -165,12 +165,12 @@ namespace Positivo.Dal.Classes
                         TestStep _model = new TestStep
                         {
                             ID = int.Parse(row["ID"].ToString()),
-                            ID_Test_Seq = int.Parse(row["ID"].ToString()),
-                            IdTp = row["Project"].ToString(),
-                            Description = row["Project"].ToString(),
-                            LowLimit = double.Parse(row["ID"].ToString()),
-                            HighLimit = double.Parse(row["ID"].ToString()),
-                            Unit = row["Project"].ToString()
+                            ID_TestSeq = int.Parse(row["ID_TestSeq"].ToString()),
+                            IdTp = row["IdTp"].ToString(),
+                            Description = row["Description"].ToString(),
+                            LowLimit = double.Parse(row["LowLimit"].ToString()),
+                            HighLimit = double.Parse(row["HighLimit"].ToString()),
+                            Unit = row["Unit"].ToString()
                         };
                         colecao.Add(_model);
                     }

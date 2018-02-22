@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Positivo.Dal.Interfaces;
 using Positivo.Dal.Classes;
+using Positivo.Log.Classes;
 
 namespace WindowsFormsApplication1
 {
@@ -36,8 +37,14 @@ namespace WindowsFormsApplication1
             LogDAL _teste = new LogDAL();
             _teste.insert(ref header);
 
-            Collection<LogResult> result = new Collection<LogResult>();
+            List<LogResult> resultCol = new List<LogResult>();
+            LogResult result = new LogResult();
+            
+            result.IdTp = "0001";
+            result.Result = 10;
+            result.elapsetimeresult = 5;
 
+            resultCol.Add(result);
 
         }
     }

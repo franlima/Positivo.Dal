@@ -47,11 +47,14 @@
     <Compile Include="Classes\INI.cs" />
     <Compile Include="Classes\LOG.cs" />
     <Compile Include="Classes\Rts.cs" />
-    <Compile Include="source\Class1.cs" />
-    <Compile Include="source\DB.cs" />
+    <Compile Include="Classes\Class1.cs" />
+    <Compile Include="Classes\DB.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="source\Dal.cd" />
+    <None Include="Classes\Dal.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

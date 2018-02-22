@@ -43,7 +43,6 @@
     <Compile Include="Classes\Connection.cs" />
     <Compile Include="Classes\GenericTable.cs" />
     <Compile Include="Classes\Line.cs" />
-    <Compile Include="Classes\Log.cs" />
     <Compile Include="Classes\ProjectSeq.cs" />
     <Compile Include="Classes\TestHeader.cs" />
     <Compile Include="Classes\TestResult.cs" />
