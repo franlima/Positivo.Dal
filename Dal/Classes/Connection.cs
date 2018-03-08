@@ -15,6 +15,9 @@ namespace Positivo.Dal.Classes
     {
         private SqlConnection _connection;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public Connection()
         {
             //string str = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString.ToString();
@@ -24,6 +27,9 @@ namespace Positivo.Dal.Classes
             
         }
 
+        /// <summary>
+        /// Open DB connection
+        /// </summary>
         public SqlConnection Open()
         {
             if (_connection.State == ConnectionState.Closed)
@@ -33,11 +39,17 @@ namespace Positivo.Dal.Classes
             return _connection;
         }
 
+        /// <summary>
+        /// Check pointer to Open connection
+        /// </summary>
         public SqlConnection Find()
         {
             return this.Open();
         }
 
+        /// <summary>
+        /// Close DB connection
+        /// </summary>
         public void Close()
         {
             if (_connection.State == ConnectionState.Open)
@@ -46,6 +58,9 @@ namespace Positivo.Dal.Classes
             }
         }
 
+        /// <summary>
+        /// Disposible method
+        /// </summary>
         public void Dispose()
         {
             this.Close();

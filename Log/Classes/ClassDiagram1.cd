@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Positivo.Log.Classes.LogHeader" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEIACAAAAAQgAAIAAAgAAAAAAggAAAAAQAEAAAAAAA=</HashCode>
+      <FileName>Classes\Log.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Positivo.Log.Classes.LogResult" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACBAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Log.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Positivo.Log.Classes.LogDAL" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAEAACCJACAAgAEBBAIAAAAAEAoAiABARAAAMIEA=</HashCode>
+      <FileName>Classes\Log.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Positivo.Log.Classes.OdmFile" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\OdmFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Positivo.Log.Interfaces.ILog" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAEAAAEAAAAAAAAAAAEAAAAEAAAAAA=</HashCode>
+      <FileName>Interfaces\ILog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

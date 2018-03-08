@@ -37,7 +37,7 @@ namespace Positivo.Log.Classes
         public double elapsetimeresult { get; set; }
     }
 
-    public class LogDAL : LogResult, IDisposable
+    public class LogDAL : IDisposable
     {
 
         private IConnection conexao;
@@ -70,6 +70,9 @@ namespace Positivo.Log.Classes
             TestHeader _testheader = new TestHeader();
             Collection<TestStep> _teststep = new Collection<TestStep>();
             Collection<TestResult> _testresult = new Collection<TestResult>();
+
+            startConn();
+
         }
 
         private bool startConn()
@@ -267,6 +270,8 @@ namespace Positivo.Log.Classes
 
         public void Dispose()
         {
+            conexao.Close();
+            conexao.Dispose();
             GC.SuppressFinalize(this);
         }
     }

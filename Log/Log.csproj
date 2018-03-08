@@ -43,10 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Log.cs" />
+    <Compile Include="Classes\OdmFile.cs" />
+    <Compile Include="Interfaces\ILog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <None Include="Classes\ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

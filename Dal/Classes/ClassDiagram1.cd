@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Positivo.Dal.Classes.Connection" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAIAAAAAAAAAAAAAAIAAAAAAAAAACABAA=</HashCode>
+      <FileName>Classes\Connection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Positivo.Dal.Classes.GenericTable" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAggAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\GenericTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Positivo.Dal.Classes.GenericTableDAL" Collapsed="true">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACBAAAAEAGAAAAAAAAAAAAAAAAAAAAAEBAA=</HashCode>
+      <FileName>Classes\GenericTable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Positivo.Dal.Classes.Line" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Line.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Positivo.Dal.Classes.Station" Collapsed="true">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Line.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Positivo.Dal.Classes.Phase" Collapsed="true">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Line.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Positivo.Dal.Classes.TestSeq" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Line.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Positivo.Dal.Classes.ProjectSeq" Collapsed="true">
+    <Position X="3.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\ProjectSeq.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Positivo.Dal.Classes.ProjectSeqDAL" Collapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACBAAAAEAGAAAAAAAAAAAAAAAAAAAAAEBAA=</HashCode>
+      <FileName>Classes\ProjectSeq.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Positivo.Dal.Classes.TestHeader" Collapsed="true">
+    <Position X="7.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQEAAAAAAAgAAAAAAAAAAAIgAgIAgCAAAAAAAIAAA=</HashCode>
+      <FileName>Classes\TestHeader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Positivo.Dal.Classes.TestHeaderDAL" Collapsed="true">
+    <Position X="9" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACBAAAAEAGAAAAAAAAAAAAAAAAAAAAAEBAA=</HashCode>
+      <FileName>Classes\TestHeader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Positivo.Dal.Classes.TestResult" Collapsed="true">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACgAAIAAAAAAQAAAAAAAACABAAAAAAAAA=</HashCode>
+      <FileName>Classes\TestResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Positivo.Dal.Classes.TestResultDAL" Collapsed="true">
+    <Position X="9" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACBAAAAEAGAAAAAAAAAAAAAAAAAAAAAEBAA=</HashCode>
+      <FileName>Classes\TestResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Positivo.Dal.Classes.TestStep" Collapsed="true">
+    <Position X="3.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAigAAAIAAAAAAAAAAACACAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\TestStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Positivo.Dal.Classes.TestStepDAL" Collapsed="true">
+    <Position X="5.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACBAAQAEAGAAAAAAAAAAAAAAAAAAAAAEBAA=</HashCode>
+      <FileName>Classes\TestStep.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Positivo.Dal.Interfaces.IConnection" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAIAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Interfaces\IConnecton.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Positivo.Dal.Interfaces.IDAL&lt;T&gt;" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAEAGAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Interfaces\IDAL.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
